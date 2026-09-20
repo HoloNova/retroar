@@ -1,0 +1,12 @@
+# Python environment (recreate with uv + requirements-cpu.lock)
+.venv/
+__pycache__/
+*.pyc
+
+# Full local result archive: ~300 MiB of checkpoints and per-example dumps.
+# The published tree in results/ is rebuilt from it with scripts/slim_results.py.
+results_full/
+
+# Heavy artefacts deliberately left out of the published tree
+*.pt
+*.log
