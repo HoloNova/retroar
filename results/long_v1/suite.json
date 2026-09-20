@@ -1,0 +1,38 @@
+{
+  "config": {
+    "dataset": "data/color6.json",
+    "model": {
+      "width": 32,
+      "heads": 2,
+      "ff": 64,
+      "layers": 1
+    },
+    "threads": 1,
+    "batch_size": 16,
+    "eval_batch": 32,
+    "learning_rate": 0.001,
+    "steps": 5000,
+    "eval_every": 250,
+    "max_seconds": 1200,
+    "evaluate_test": true,
+    "protection": {
+      "startup_available_mib": 1536,
+      "min_available_mib": 768,
+      "max_rss_mib": 1024
+    }
+  },
+  "modes": [
+    "ar",
+    "extra_compute",
+    "hard",
+    "soft",
+    "soft_feedback"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "dataset_sha256": "f7e53ef76871a4d12c67de9f0e4a3b5731ff6c32ce64be00e809546c65bc1abc",
+  "source_sha256": "1cc93bb339d50dc8292cc49a2b9fb54e5459f6299c29f101609312c8eae76d2b"
+}

@@ -1,0 +1,7 @@
+{
+  "state": "blocked",
+  "completed_training": [],
+  "active": [],
+  "total_training": 4,
+  "error": "Outer test command timed out while waiting for 1536 MiB startup memory; process table verified no surviving delayed workers. State reconciled manually after timeout. Superseded by new smoke run after adaptive single-worker admission fix."
+}

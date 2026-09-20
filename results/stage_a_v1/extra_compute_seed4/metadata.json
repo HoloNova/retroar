@@ -1,0 +1,33 @@
+{
+  "config": {
+    "dataset": "data/color6.json",
+    "model": {
+      "width": 32,
+      "heads": 2,
+      "ff": 64,
+      "layers": 1
+    },
+    "threads": 1,
+    "batch_size": 16,
+    "eval_batch": 32,
+    "learning_rate": 0.001,
+    "steps": 5000,
+    "eval_every": 250,
+    "max_seconds": 1200,
+    "evaluate_test": true,
+    "protection": {
+      "startup_available_mib": 1536,
+      "min_available_mib": 768,
+      "max_rss_mib": 1024
+    }
+  },
+  "mode": "extra_compute",
+  "seed": 4,
+  "dataset_sha256": "f7e53ef76871a4d12c67de9f0e4a3b5731ff6c32ce64be00e809546c65bc1abc",
+  "torch": "2.10.0+cpu",
+  "parameters": 9475,
+  "initial_weights_sha256": "ab701d360f99f2bfd0a50a178623cab387da2699e601968535abd37d029e08f7",
+  "feedback_gradient": "detached in every mode",
+  "selection": "validation sequence accuracy, then final cross entropy",
+  "source_sha256": "b3267b96fbeaacb741a6979a50f1126b5e7e8c006d18fcc548bb38a7268c785c"
+}

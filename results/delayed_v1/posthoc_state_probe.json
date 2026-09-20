@@ -1,0 +1,215 @@
+{
+  "post_hoc": true,
+  "split": "test",
+  "dataset_sha256": "a10b0931ecd7533960a3ff4af48e78911f2c0cf2e23146e14ac63acd7232bb24",
+  "caveat": "Frozen trained soft models; one state replacement at evidence arrival; present flags retained. Distribution shift; cannot substitute for training restart_soft or independent replication.",
+  "rows": [
+    {
+      "seed": 30,
+      "treatment": "unchanged",
+      "accuracy": 0.8984375,
+      "early_state_entropy": 1.0909326821565628,
+      "early_mean_max_probability": 0.377532422542572,
+      "early_mean_abs_distance_uniform": 0.032973699271678925
+    },
+    {
+      "seed": 30,
+      "treatment": "uniform",
+      "accuracy": 0.89453125,
+      "early_state_entropy": 1.0909326821565628,
+      "early_mean_max_probability": 0.377532422542572,
+      "early_mean_abs_distance_uniform": 0.032973699271678925
+    },
+    {
+      "seed": 30,
+      "treatment": "harden",
+      "accuracy": 0.859375,
+      "early_state_entropy": 1.0909326821565628,
+      "early_mean_max_probability": 0.377532422542572,
+      "early_mean_abs_distance_uniform": 0.032973699271678925
+    },
+    {
+      "seed": 30,
+      "treatment": "other_question",
+      "accuracy": 0.8984375,
+      "early_state_entropy": 1.0909326821565628,
+      "early_mean_max_probability": 0.377532422542572,
+      "early_mean_abs_distance_uniform": 0.032973699271678925
+    },
+    {
+      "seed": 30,
+      "treatment": "zeros",
+      "accuracy": 0.89453125,
+      "early_state_entropy": 1.0909326821565628,
+      "early_mean_max_probability": 0.377532422542572,
+      "early_mean_abs_distance_uniform": 0.032973699271678925
+    },
+    {
+      "seed": 31,
+      "treatment": "unchanged",
+      "accuracy": 0.89453125,
+      "early_state_entropy": 1.0867931246757507,
+      "early_mean_max_probability": 0.3866230323910713,
+      "early_mean_abs_distance_uniform": 0.03984383633360267
+    },
+    {
+      "seed": 31,
+      "treatment": "uniform",
+      "accuracy": 0.8984375,
+      "early_state_entropy": 1.0867931246757507,
+      "early_mean_max_probability": 0.3866230323910713,
+      "early_mean_abs_distance_uniform": 0.03984383633360267
+    },
+    {
+      "seed": 31,
+      "treatment": "harden",
+      "accuracy": 0.86328125,
+      "early_state_entropy": 1.0867931246757507,
+      "early_mean_max_probability": 0.3866230323910713,
+      "early_mean_abs_distance_uniform": 0.03984383633360267
+    },
+    {
+      "seed": 31,
+      "treatment": "other_question",
+      "accuracy": 0.89453125,
+      "early_state_entropy": 1.0867931246757507,
+      "early_mean_max_probability": 0.3866230323910713,
+      "early_mean_abs_distance_uniform": 0.03984383633360267
+    },
+    {
+      "seed": 31,
+      "treatment": "zeros",
+      "accuracy": 0.90234375,
+      "early_state_entropy": 1.0867931246757507,
+      "early_mean_max_probability": 0.3866230323910713,
+      "early_mean_abs_distance_uniform": 0.03984383633360267
+    },
+    {
+      "seed": 32,
+      "treatment": "unchanged",
+      "accuracy": 0.8984375,
+      "early_state_entropy": 1.0915363729000092,
+      "early_mean_max_probability": 0.37754569575190544,
+      "early_mean_abs_distance_uniform": 0.03167259390465915
+    },
+    {
+      "seed": 32,
+      "treatment": "uniform",
+      "accuracy": 0.8984375,
+      "early_state_entropy": 1.0915363729000092,
+      "early_mean_max_probability": 0.37754569575190544,
+      "early_mean_abs_distance_uniform": 0.03167259390465915
+    },
+    {
+      "seed": 32,
+      "treatment": "harden",
+      "accuracy": 0.8828125,
+      "early_state_entropy": 1.0915363729000092,
+      "early_mean_max_probability": 0.37754569575190544,
+      "early_mean_abs_distance_uniform": 0.03167259390465915
+    },
+    {
+      "seed": 32,
+      "treatment": "other_question",
+      "accuracy": 0.890625,
+      "early_state_entropy": 1.0915363729000092,
+      "early_mean_max_probability": 0.37754569575190544,
+      "early_mean_abs_distance_uniform": 0.03167259390465915
+    },
+    {
+      "seed": 32,
+      "treatment": "zeros",
+      "accuracy": 0.90625,
+      "early_state_entropy": 1.0915363729000092,
+      "early_mean_max_probability": 0.37754569575190544,
+      "early_mean_abs_distance_uniform": 0.03167259390465915
+    },
+    {
+      "seed": 33,
+      "treatment": "unchanged",
+      "accuracy": 0.8984375,
+      "early_state_entropy": 1.0902637839317322,
+      "early_mean_max_probability": 0.37928466498851776,
+      "early_mean_abs_distance_uniform": 0.03480936959385872
+    },
+    {
+      "seed": 33,
+      "treatment": "uniform",
+      "accuracy": 0.90625,
+      "early_state_entropy": 1.0902637839317322,
+      "early_mean_max_probability": 0.37928466498851776,
+      "early_mean_abs_distance_uniform": 0.03480936959385872
+    },
+    {
+      "seed": 33,
+      "treatment": "harden",
+      "accuracy": 0.86328125,
+      "early_state_entropy": 1.0902637839317322,
+      "early_mean_max_probability": 0.37928466498851776,
+      "early_mean_abs_distance_uniform": 0.03480936959385872
+    },
+    {
+      "seed": 33,
+      "treatment": "other_question",
+      "accuracy": 0.89453125,
+      "early_state_entropy": 1.0902637839317322,
+      "early_mean_max_probability": 0.37928466498851776,
+      "early_mean_abs_distance_uniform": 0.03480936959385872
+    },
+    {
+      "seed": 33,
+      "treatment": "zeros",
+      "accuracy": 0.90625,
+      "early_state_entropy": 1.0902637839317322,
+      "early_mean_max_probability": 0.37928466498851776,
+      "early_mean_abs_distance_uniform": 0.03480936959385872
+    },
+    {
+      "seed": 34,
+      "treatment": "unchanged",
+      "accuracy": 0.921875,
+      "early_state_entropy": 1.0866025686264038,
+      "early_mean_max_probability": 0.3852541111409664,
+      "early_mean_abs_distance_uniform": 0.038813360035419464
+    },
+    {
+      "seed": 34,
+      "treatment": "uniform",
+      "accuracy": 0.921875,
+      "early_state_entropy": 1.0866025686264038,
+      "early_mean_max_probability": 0.3852541111409664,
+      "early_mean_abs_distance_uniform": 0.038813360035419464
+    },
+    {
+      "seed": 34,
+      "treatment": "harden",
+      "accuracy": 0.87109375,
+      "early_state_entropy": 1.0866025686264038,
+      "early_mean_max_probability": 0.3852541111409664,
+      "early_mean_abs_distance_uniform": 0.038813360035419464
+    },
+    {
+      "seed": 34,
+      "treatment": "other_question",
+      "accuracy": 0.91796875,
+      "early_state_entropy": 1.0866025686264038,
+      "early_mean_max_probability": 0.3852541111409664,
+      "early_mean_abs_distance_uniform": 0.038813360035419464
+    },
+    {
+      "seed": 34,
+      "treatment": "zeros",
+      "accuracy": 0.921875,
+      "early_state_entropy": 1.0866025686264038,
+      "early_mean_max_probability": 0.3852541111409664,
+      "early_mean_abs_distance_uniform": 0.038813360035419464
+    }
+  ],
+  "means": {
+    "unchanged": 0.90234375,
+    "uniform": 0.90390625,
+    "harden": 0.86796875,
+    "other_question": 0.89921875,
+    "zeros": 0.90625
+  }
+}

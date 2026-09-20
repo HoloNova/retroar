@@ -1,0 +1,178 @@
+{
+  "ar_matched": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.34375,
+    "training_seconds_mean": 0.7647631770814769,
+    "peak_rss_mib_max": 286.18359375,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "ar": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.34375,
+    "training_seconds_mean": 0.43530328798806295,
+    "peak_rss_mib_max": 283.23046875,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "extra_compute": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.375,
+    "training_seconds_mean": 0.8373336740187369,
+    "peak_rss_mib_max": 285.36328125,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "hard": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.3645833333333333,
+    "training_seconds_mean": 0.7800540738680866,
+    "peak_rss_mib_max": 285.15234375,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "posthoc_hard": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.2708333333333333,
+    "training_seconds_mean": 0.7690080610918812,
+    "peak_rss_mib_max": 285.234375,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "posthoc_soft": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.3125,
+    "training_seconds_mean": 0.8277954091026913,
+    "peak_rss_mib_max": 285.32421875,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "soft_feedback": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.34375,
+    "training_seconds_mean": 0.402466278988868,
+    "peak_rss_mib_max": 283.26171875,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "soft": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.0,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.3645833333333333,
+    "training_seconds_mean": 0.8339888679620344,
+    "peak_rss_mib_max": 285.671875,
+    "completed_steps": [
+      20
+    ],
+    "best_steps": [
+      20
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  }
+}

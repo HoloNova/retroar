@@ -1,0 +1,2 @@
+{"step": 50, "val_accuracy": 0.0625, "loss": 1.0159505605697632, "elapsed_seconds": 2.279621785011841}
+{"step": 100, "val_accuracy": 0.25, "loss": 0.8185970783233643, "elapsed_seconds": 4.4693027950124815}

@@ -1,0 +1,23 @@
+{
+  "dataset": "data/smoke.json",
+  "model": {
+    "width": 32,
+    "heads": 2,
+    "ff": 64,
+    "layers": 1
+  },
+  "threads": 1,
+  "batch_size": 16,
+  "eval_batch": 32,
+  "learning_rate": 0.001,
+  "steps": 300,
+  "eval_every": 300,
+  "max_seconds": 240,
+  "evaluate_test": false,
+  "supervision": "balanced",
+  "protection": {
+    "startup_available_mib": 1536,
+    "min_available_mib": 768,
+    "max_rss_mib": 1024
+  }
+}

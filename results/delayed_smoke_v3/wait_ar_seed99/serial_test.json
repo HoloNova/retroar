@@ -1,0 +1,257 @@
+{
+ "metadata": {
+  "config": {
+   "dataset": "data/color6_delayed_smoke.json",
+   "model": {
+    "width": 32,
+    "heads": 2,
+    "ff": 64,
+    "layers": 1
+   },
+   "policies": [
+    "wait_ar",
+    "restart_hard",
+    "revise_hard",
+    "revise_soft"
+   ],
+   "seeds": [
+    99
+   ],
+   "workers": 2,
+   "batch_size": 16,
+   "learning_rate": 0.001,
+   "steps": 100,
+   "eval_every": 50,
+   "run_seconds": 1800,
+   "suite_seconds": 600,
+   "final_split": "val"
+  },
+  "dataset_sha256": "0b5086e933e6af967c3aca4ff4e2d38d5f4b28f8f402d7954a3bb8cd3a05fca1",
+  "source_sha256": "d122e5b8ebd99669ff26591b92967a82be9d323e7ffe6511cf62d81f67e79eb0",
+  "torch": "2.10.0+cpu",
+  "policy": "wait_ar",
+  "seed": 99
+ },
+ "checkpoint_step": 100,
+ "split": "val",
+ "metrics": {
+  "sequence_accuracy": 0.1875,
+  "token_accuracy": 0.7083333134651184,
+  "constraint_success": 0.1875,
+  "correct_per_example": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "examples": 16,
+  "effective_forward_calls": 6,
+  "late_forward_calls": 6,
+  "wrong_to_right_events": 0,
+  "right_to_wrong_events": 0,
+  "changed_events": 0,
+  "initial_sequence_accuracy": 0.0,
+  "wall_seconds_including_diagnostics": 0.03291552700102329,
+  "controls": {
+   "frozen_early": {
+    "sequence_accuracy": 0.0,
+    "token_accuracy": 0.3541666567325592,
+    "constraint_success": 0.0,
+    "correct_per_example": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "permutation_repair": {
+    "sequence_accuracy": 0.0,
+    "token_accuracy": 0.4895833432674408,
+    "constraint_success": 0.0,
+    "correct_per_example": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "no_reveal": {
+    "sequence_accuracy": 0.0,
+    "token_accuracy": 0.3333333432674408,
+    "constraint_success": 0.0,
+    "correct_per_example": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "wait_k2": {
+    "sequence_accuracy": 0.25,
+    "token_accuracy": 0.6979166865348816,
+    "constraint_success": 0.25,
+    "correct_per_example": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  "examples_trace": [
+   {
+    "initial": [
+     2,
+     2,
+     2,
+     0,
+     0,
+     0
+    ],
+    "final": [
+     0,
+     0,
+     0,
+     2,
+     1,
+     1
+    ],
+    "target": [
+     2,
+     1,
+     0,
+     2,
+     2,
+     1
+    ]
+   },
+   {
+    "initial": [
+     2,
+     0,
+     2,
+     2,
+     1,
+     0
+    ],
+    "final": [
+     0,
+     1,
+     0,
+     2,
+     0,
+     0
+    ],
+    "target": [
+     0,
+     1,
+     1,
+     2,
+     1,
+     0
+    ]
+   },
+   {
+    "initial": [
+     0,
+     0,
+     2,
+     2,
+     2,
+     1
+    ],
+    "final": [
+     1,
+     0,
+     0,
+     2,
+     1,
+     0
+    ],
+    "target": [
+     1,
+     1,
+     0,
+     2,
+     2,
+     0
+    ]
+   }
+  ],
+  "serial_timing": [
+   {
+    "policy": "main",
+    "median_seconds_per_question": 0.004292790006729774
+   },
+   {
+    "policy": "wait_k2",
+    "median_seconds_per_question": 0.009811780488234945
+   }
+  ]
+ },
+ "stripped_for_publication": {
+  "removed": {},
+  "reason": "per-example prediction dumps omitted to keep the repository small; aggregated metrics are complete and unmodified",
+  "regenerate": "re-run the suite with the same seeds and configuration"
+ }
+}

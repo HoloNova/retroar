@@ -1,0 +1,112 @@
+{
+  "ar": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "val",
+    "sequence_accuracy_mean": 0.1171875,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.70703125,
+    "training_seconds_mean": 12.961215972609352,
+    "peak_rss_mib_max": 288.40625,
+    "completed_steps": [
+      500
+    ],
+    "best_steps": [
+      500
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "extra_compute": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "val",
+    "sequence_accuracy_mean": 0.1171875,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.6848958333333334,
+    "training_seconds_mean": 23.971495669626165,
+    "peak_rss_mib_max": 292.25390625,
+    "completed_steps": [
+      500
+    ],
+    "best_steps": [
+      500
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "hard": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "val",
+    "sequence_accuracy_mean": 0.0859375,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.6927083333333334,
+    "training_seconds_mean": 26.663076660217484,
+    "peak_rss_mib_max": 292.1875,
+    "completed_steps": [
+      500
+    ],
+    "best_steps": [
+      500
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "soft_feedback": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "val",
+    "sequence_accuracy_mean": 0.125,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.7122395833333334,
+    "training_seconds_mean": 13.810061929136282,
+    "peak_rss_mib_max": 288.4765625,
+    "completed_steps": [
+      500
+    ],
+    "best_steps": [
+      500
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "soft": {
+    "seeds": [
+      0
+    ],
+    "completed_runs": 1,
+    "evaluation_split": "val",
+    "sequence_accuracy_mean": 0.0859375,
+    "sequence_accuracy_stdev": null,
+    "token_accuracy_mean": 0.69140625,
+    "training_seconds_mean": 25.32167663591099,
+    "peak_rss_mib_max": 292.265625,
+    "completed_steps": [
+      500
+    ],
+    "best_steps": [
+      400
+    ],
+    "stop_reasons": [
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  }
+}

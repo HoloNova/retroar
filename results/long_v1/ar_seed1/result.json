@@ -1,0 +1,54 @@
+{
+  "config": {
+    "dataset": "data/color6.json",
+    "model": {
+      "width": 32,
+      "heads": 2,
+      "ff": 64,
+      "layers": 1
+    },
+    "threads": 1,
+    "batch_size": 16,
+    "eval_batch": 32,
+    "learning_rate": 0.001,
+    "steps": 5000,
+    "eval_every": 250,
+    "max_seconds": 1200,
+    "evaluate_test": true,
+    "protection": {
+      "startup_available_mib": 1536,
+      "min_available_mib": 768,
+      "max_rss_mib": 1024
+    }
+  },
+  "mode": "ar",
+  "seed": 1,
+  "dataset_sha256": "f7e53ef76871a4d12c67de9f0e4a3b5731ff6c32ce64be00e809546c65bc1abc",
+  "torch": "2.10.0+cpu",
+  "parameters": 9475,
+  "initial_weights_sha256": "596c1d7889939cd2f47c4fc720d7f94591ae283c146aaa72ade6671b05defc84",
+  "feedback_gradient": "detached in every mode",
+  "selection": "validation sequence accuracy, then final cross entropy",
+  "source_sha256": "1cc93bb339d50dc8292cc49a2b9fb54e5459f6299c29f101609312c8eae76d2b",
+  "completed_steps": 5000,
+  "best_step": 4750,
+  "stop_reason": "max_steps",
+  "training_seconds": 131.1194000452524,
+  "elapsed_seconds": 132.22085226801573,
+  "peak_rss_mib": 288.80859375,
+  "evaluation_split": "test",
+  "evaluation": {
+    "examples": 256,
+    "token_accuracy": 0.9309895833333334,
+    "sequence_accuracy": 0.7421875,
+    "constraint_success": 0.7421875,
+    "final_cross_entropy": 0.21692887072761854,
+    "brier": 0.10370108547310035,
+    "wrong_to_right": 0,
+    "right_to_wrong": 0,
+    "revision_opportunities": 0,
+    "net_revision_rate": null,
+    "inference_seconds": 0.07720969701767899,
+    "forward_calls_per_example": 6
+  }
+}

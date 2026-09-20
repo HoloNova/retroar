@@ -1,0 +1,7 @@
+{
+  "state": "completed",
+  "mode": "ar_matched",
+  "seed": 0,
+  "step": 20,
+  "stop_reason": "max_steps"
+}

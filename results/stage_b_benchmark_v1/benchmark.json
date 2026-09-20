@@ -1,0 +1,20 @@
+{
+  "elapsed_seconds": {
+    "1": 44.21063994598808,
+    "2": 26.15677900298033
+  },
+  "speedup": 1.6902172832882318,
+  "recommended_workers": 2,
+  "equal_final_weights": true,
+  "checkpoint_hashes": {
+    "1": {
+      "soft_seed72": "0b647809a2bc5fe5504ad3dbb7af827b090647937c11f71f0738750fe65179bc",
+      "soft_seed71": "5d0f4fd4cc6c44982f69b69d9ee08713b8db1998d0e6cb6cdd457546791b4004"
+    },
+    "2": {
+      "soft_seed72": "0b647809a2bc5fe5504ad3dbb7af827b090647937c11f71f0738750fe65179bc",
+      "soft_seed71": "5d0f4fd4cc6c44982f69b69d9ee08713b8db1998d0e6cb6cdd457546791b4004"
+    }
+  },
+  "note": "Two 300-step jobs; includes process startup and serial val evaluation. Not a long-run guarantee."
+}

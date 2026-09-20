@@ -1,0 +1,111 @@
+{
+  "config": {
+    "workers": 2,
+    "suite_seconds": 600,
+    "final_split": "val",
+    "seeds": [
+      31
+    ],
+    "variants": [
+      {
+        "name": "hard",
+        "mode": "hard",
+        "steps": 20
+      },
+      {
+        "name": "soft_t1",
+        "mode": "soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 1.0
+        }
+      },
+      {
+        "name": "soft_t2",
+        "mode": "soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 2.0
+        }
+      },
+      {
+        "name": "soft_t4",
+        "mode": "soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 4.0
+        }
+      },
+      {
+        "name": "soft_t8",
+        "mode": "soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 8.0
+        }
+      },
+      {
+        "name": "posthoc_hard",
+        "mode": "posthoc_hard",
+        "steps": 20
+      },
+      {
+        "name": "posthoc_soft_t1",
+        "mode": "posthoc_soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 1.0
+        }
+      },
+      {
+        "name": "posthoc_soft_t2",
+        "mode": "posthoc_soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 2.0
+        }
+      },
+      {
+        "name": "posthoc_soft_t4",
+        "mode": "posthoc_soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 4.0
+        }
+      },
+      {
+        "name": "posthoc_soft_t8",
+        "mode": "posthoc_soft",
+        "steps": 20,
+        "overrides": {
+          "soft_temperature": 8.0
+        }
+      }
+    ],
+    "training": {
+      "dataset": "data/smoke.json",
+      "model": {
+        "width": 32,
+        "heads": 2,
+        "ff": 64,
+        "layers": 1
+      },
+      "threads": 1,
+      "batch_size": 16,
+      "eval_batch": 32,
+      "learning_rate": 0.001,
+      "steps": 5000,
+      "eval_every": 20,
+      "max_seconds": 120,
+      "evaluate_test": false,
+      "supervision": "balanced",
+      "protection": {
+        "startup_available_mib": 1536,
+        "min_available_mib": 768,
+        "max_rss_mib": 1024
+      }
+    }
+  },
+  "source_sha256": "a572d307b237688e644c3d22ba02036c28584aba4a854a581d6a295b68be8e68",
+  "dataset_sha256": "5f61c333b8457926ccf6adbf1f58607200ade016dae36fcf37cef2dfc3a21c2d"
+}

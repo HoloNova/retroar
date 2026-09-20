@@ -1,0 +1,7 @@
+{
+  "state": "completed",
+  "mode": "posthoc_soft",
+  "seed": 13,
+  "step": 5000,
+  "stop_reason": "max_steps"
+}

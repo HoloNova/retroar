@@ -1,0 +1,13 @@
+{
+  "state": "completed",
+  "completed_training": [
+    "wait_ar_seed99",
+    "restart_hard_seed99",
+    "revise_hard_seed99",
+    "revise_soft_seed99"
+  ],
+  "active": [],
+  "total_training": 4,
+  "elapsed_seconds": 55.14057839300949,
+  "completed_evaluations": 4
+}

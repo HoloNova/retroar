@@ -1,0 +1,37 @@
+{
+  "config": {
+    "dataset": "data/color6_stage_b.json",
+    "model": {
+      "width": 32,
+      "heads": 2,
+      "ff": 64,
+      "layers": 1
+    },
+    "policies": [
+      "wait_ar",
+      "restart_hard",
+      "revise_hard",
+      "revise_soft"
+    ],
+    "seeds": [
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "workers": 2,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "steps": 5000,
+    "eval_every": 500,
+    "run_seconds": 1800,
+    "suite_seconds": 7200,
+    "final_split": "test"
+  },
+  "dataset_sha256": "a10b0931ecd7533960a3ff4af48e78911f2c0cf2e23146e14ac63acd7232bb24",
+  "source_sha256": "d122e5b8ebd99669ff26591b92967a82be9d323e7ffe6511cf62d81f67e79eb0",
+  "torch": "2.10.0+cpu",
+  "policy": "restart_hard",
+  "seed": 31
+}

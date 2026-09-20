@@ -1,0 +1,7 @@
+{
+  "state": "completed",
+  "mode": "ar",
+  "seed": 10,
+  "step": 10000,
+  "stop_reason": "max_steps"
+}

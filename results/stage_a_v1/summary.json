@@ -1,0 +1,306 @@
+{
+  "ar_matched": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.7734375,
+    "sequence_accuracy_stdev": 0.04234274099351328,
+    "token_accuracy_mean": 0.9407552083333333,
+    "training_seconds_mean": 226.07511971619678,
+    "peak_rss_mib_max": 292.76171875,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      5000,
+      4750,
+      3750,
+      4000,
+      3250
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "ar": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.76953125,
+    "sequence_accuracy_stdev": 0.03548027758707998,
+    "token_accuracy_mean": 0.9408854166666667,
+    "training_seconds_mean": 127.77881754019181,
+    "peak_rss_mib_max": 288.953125,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      5000,
+      4750,
+      5000,
+      4500,
+      3250
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "extra_compute": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.74140625,
+    "sequence_accuracy_stdev": 0.013643944684822641,
+    "token_accuracy_mean": 0.93359375,
+    "training_seconds_mean": 236.17022453434183,
+    "peak_rss_mib_max": 292.73046875,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4750,
+      4500,
+      4500,
+      4000,
+      3500
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "hard": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.8453125,
+    "sequence_accuracy_stdev": 0.011912461470294459,
+    "token_accuracy_mean": 0.9571614583333333,
+    "training_seconds_mean": 237.40443979132687,
+    "peak_rss_mib_max": 292.60546875,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4500,
+      4500,
+      3250,
+      4000,
+      3750
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "posthoc_hard": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.8828125,
+    "sequence_accuracy_stdev": 0.012657696676577852,
+    "token_accuracy_mean": 0.9639322916666666,
+    "training_seconds_mean": 240.40796071275253,
+    "peak_rss_mib_max": 292.3828125,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4500,
+      5000,
+      4250,
+      4000,
+      4750
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "posthoc_soft": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.925,
+    "sequence_accuracy_stdev": 0.011521782190431738,
+    "token_accuracy_mean": 0.9744791666666667,
+    "training_seconds_mean": 233.17019140516058,
+    "peak_rss_mib_max": 292.6015625,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      5000,
+      3750,
+      4500,
+      3000,
+      2500
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "soft_feedback": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.73984375,
+    "sequence_accuracy_stdev": 0.04867946118648244,
+    "token_accuracy_mean": 0.9304687500000001,
+    "training_seconds_mean": 124.66903192868922,
+    "peak_rss_mib_max": 289.359375,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4500,
+      5000,
+      4250,
+      3500,
+      4750
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "soft": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed_runs": 5,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.88046875,
+    "sequence_accuracy_stdev": 0.024951124097923924,
+    "token_accuracy_mean": 0.963671875,
+    "training_seconds_mean": 235.94772026137215,
+    "peak_rss_mib_max": 293.44921875,
+    "completed_steps": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4500,
+      4500,
+      4500,
+      4000,
+      4250
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  }
+}

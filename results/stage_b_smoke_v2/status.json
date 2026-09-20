@@ -1,0 +1,18 @@
+{
+  "state": "completed",
+  "phase": "finished",
+  "active": [],
+  "details": {},
+  "completed_jobs": [
+    "ar_seed81",
+    "ar_more_training_seed81",
+    "hard_seed81",
+    "soft_seed81",
+    "posthoc_hard_seed81",
+    "posthoc_soft_seed81"
+  ],
+  "total_jobs": 6,
+  "workers": 2,
+  "elapsed_seconds": 47.17128308900283,
+  "error": null
+}

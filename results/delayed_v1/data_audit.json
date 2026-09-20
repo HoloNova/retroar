@@ -1,0 +1,22 @@
+{
+  "dataset_sha256": "a10b0931ecd7533960a3ff4af48e78911f2c0cf2e23146e14ac63acd7232bb24",
+  "n": 6,
+  "sizes": {
+    "train": 1024,
+    "val": 128,
+    "test": 256
+  },
+  "distinct_exact_partial_graphs": {
+    "train": 987,
+    "val": 128,
+    "test": 255
+  },
+  "val_partial_graphs_seen_in_train": 5,
+  "test_partial_graphs_seen_in_train": 20,
+  "full_canonical_cross_split_intersection": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "caveat": "Same stage B full graphs and held-out split; not independent new test data. Some partial observations coincide by construction. Partial graph overlap here uses exact indexed adjacency, not isomorphism."
+}

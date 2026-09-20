@@ -1,0 +1,152 @@
+{
+  "ar": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "completed_runs": 3,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.7747395833333334,
+    "sequence_accuracy_stdev": 0.04660294314628459,
+    "token_accuracy_mean": 0.9424913194444444,
+    "training_seconds_mean": 132.71287379827118,
+    "peak_rss_mib_max": 288.80859375,
+    "completed_steps": [
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      5000,
+      4750,
+      5000
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "extra_compute": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "completed_runs": 3,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.7408854166666666,
+    "sequence_accuracy_stdev": 0.01761425684696443,
+    "token_accuracy_mean": 0.9351128472222222,
+    "training_seconds_mean": 245.29510769965904,
+    "peak_rss_mib_max": 292.7265625,
+    "completed_steps": [
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4750,
+      4500,
+      4500
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "hard": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "completed_runs": 3,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.8502604166666666,
+    "sequence_accuracy_stdev": 0.009830513587592122,
+    "token_accuracy_mean": 0.9587673611111112,
+    "training_seconds_mean": 250.77397674149447,
+    "peak_rss_mib_max": 292.5234375,
+    "completed_steps": [
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4500,
+      4500,
+      3250
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  },
+  "soft_feedback": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "completed_runs": 3,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.7578125,
+    "sequence_accuracy_stdev": 0.059112288868834205,
+    "token_accuracy_mean": 0.935763888888889,
+    "training_seconds_mean": 127.57883193009184,
+    "peak_rss_mib_max": 288.91796875,
+    "completed_steps": [
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4500,
+      5000,
+      4250
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 6
+  },
+  "soft": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "completed_runs": 3,
+    "evaluation_split": "test",
+    "sequence_accuracy_mean": 0.8736979166666666,
+    "sequence_accuracy_stdev": 0.03252603124165832,
+    "token_accuracy_mean": 0.9615885416666666,
+    "training_seconds_mean": 243.16582897266684,
+    "peak_rss_mib_max": 292.8828125,
+    "completed_steps": [
+      5000,
+      5000,
+      5000
+    ],
+    "best_steps": [
+      4500,
+      4500,
+      4500
+    ],
+    "stop_reasons": [
+      "max_steps",
+      "max_steps",
+      "max_steps"
+    ],
+    "forward_calls_per_example": 12
+  }
+}

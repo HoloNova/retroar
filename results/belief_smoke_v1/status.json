@@ -1,0 +1,22 @@
+{
+  "state": "completed",
+  "phase": "finished",
+  "active": [],
+  "details": {},
+  "completed_jobs": [
+    "soft_t1_seed31",
+    "hard_seed31",
+    "soft_t2_seed31",
+    "soft_t4_seed31",
+    "soft_t8_seed31",
+    "posthoc_hard_seed31",
+    "posthoc_soft_t1_seed31",
+    "posthoc_soft_t2_seed31",
+    "posthoc_soft_t4_seed31",
+    "posthoc_soft_t8_seed31"
+  ],
+  "total_jobs": 10,
+  "workers": 2,
+  "elapsed_seconds": 61.19128660400747,
+  "error": null
+}

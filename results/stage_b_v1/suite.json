@@ -1,0 +1,72 @@
+{
+  "config": {
+    "workers": 2,
+    "suite_seconds": 18000,
+    "final_split": "test",
+    "seeds": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "variants": [
+      {
+        "name": "ar",
+        "mode": "ar",
+        "steps": 5000
+      },
+      {
+        "name": "ar_more_training",
+        "mode": "ar",
+        "steps": 10000,
+        "eval_every": 500
+      },
+      {
+        "name": "hard",
+        "mode": "hard",
+        "steps": 5000
+      },
+      {
+        "name": "soft",
+        "mode": "soft",
+        "steps": 5000
+      },
+      {
+        "name": "posthoc_hard",
+        "mode": "posthoc_hard",
+        "steps": 5000
+      },
+      {
+        "name": "posthoc_soft",
+        "mode": "posthoc_soft",
+        "steps": 5000
+      }
+    ],
+    "training": {
+      "dataset": "data/color6_stage_b.json",
+      "model": {
+        "width": 32,
+        "heads": 2,
+        "ff": 64,
+        "layers": 1
+      },
+      "threads": 1,
+      "batch_size": 16,
+      "eval_batch": 32,
+      "learning_rate": 0.001,
+      "steps": 5000,
+      "eval_every": 250,
+      "max_seconds": 2400,
+      "evaluate_test": false,
+      "supervision": "balanced",
+      "protection": {
+        "startup_available_mib": 1536,
+        "min_available_mib": 768,
+        "max_rss_mib": 1024
+      }
+    }
+  },
+  "source_sha256": "7089391f4418701198db6a3f94d2c2abe3a9e764672d00bde02a4567df62619a",
+  "dataset_sha256": "a10b0931ecd7533960a3ff4af48e78911f2c0cf2e23146e14ac63acd7232bb24"
+}

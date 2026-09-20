@@ -1,0 +1,14 @@
+{
+  "state": "completed",
+  "phase": "finished",
+  "active": [],
+  "details": {},
+  "completed_jobs": [
+    "soft_seed71",
+    "soft_seed72"
+  ],
+  "total_jobs": 2,
+  "workers": 1,
+  "elapsed_seconds": 44.108527789998334,
+  "error": null
+}

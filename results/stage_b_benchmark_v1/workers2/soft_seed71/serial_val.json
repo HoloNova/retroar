@@ -1,0 +1,29 @@
+{
+ "mode": "soft",
+ "seed": 71,
+ "split": "val",
+ "best_step": 300,
+ "dataset_sha256": "5f61c333b8457926ccf6adbf1f58607200ade016dae36fcf37cef2dfc3a21c2d",
+ "timing_note": "serial batch=1; includes selection and trace serialization into lists; not pure kernel latency",
+ "policies": {
+  "0": {
+   "examples": 16,
+   "sequence_accuracy": 0.125,
+   "token_accuracy": 0.6979166865348816,
+   "constraint_success": 0.125,
+   "end_to_end_seconds": 0.1319118730025366,
+   "batch_size": 1,
+   "forward_calls_per_example": 12
+  }
+ },
+ "stripped_for_publication": {
+  "removed": {
+   "policies.0.details": {
+    "records": 16,
+    "sha256": "8e74fe2116ed7032e098cb65f6d3134f08efc147a824b87d021aa326f38b7057"
+   }
+  },
+  "reason": "per-example prediction dumps omitted to keep the repository small; aggregated metrics are complete and unmodified",
+  "regenerate": "re-run the suite with the same seeds and configuration"
+ }
+}

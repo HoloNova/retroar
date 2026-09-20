@@ -1,0 +1,55 @@
+{
+ "mode": "ar",
+ "seed": 14,
+ "split": "test",
+ "best_step": 9500,
+ "dataset_sha256": "a10b0931ecd7533960a3ff4af48e78911f2c0cf2e23146e14ac63acd7232bb24",
+ "timing_note": "serial batch=1; includes selection and trace serialization into lists; not pure kernel latency",
+ "policies": {
+  "1": {
+   "examples": 256,
+   "sequence_accuracy": 0.82421875,
+   "token_accuracy": 0.9498698115348816,
+   "constraint_success": 0.82421875,
+   "end_to_end_seconds": 1.029440901009366,
+   "batch_size": 1,
+   "forward_calls_per_example": 6
+  },
+  "2": {
+   "examples": 256,
+   "sequence_accuracy": 0.8359375,
+   "token_accuracy": 0.9524739384651184,
+   "constraint_success": 0.8359375,
+   "end_to_end_seconds": 2.28866482101148,
+   "batch_size": 1,
+   "forward_calls_per_example": 12
+  },
+  "4": {
+   "examples": 256,
+   "sequence_accuracy": 0.84765625,
+   "token_accuracy": 0.955078125,
+   "constraint_success": 0.84765625,
+   "end_to_end_seconds": 4.977953005000018,
+   "batch_size": 1,
+   "forward_calls_per_example": 24
+  }
+ },
+ "stripped_for_publication": {
+  "removed": {
+   "policies.1.details": {
+    "records": 256,
+    "sha256": "1d34f458a9bd565cf098f19fe16579c79def4b91f57cbccff7af364ce5f8c148"
+   },
+   "policies.2.details": {
+    "records": 256,
+    "sha256": "8eb14ec57933e50997678fdfe24b57f2f54d810836560a416fbe6108f1d2f3b7"
+   },
+   "policies.4.details": {
+    "records": 256,
+    "sha256": "9197406c205877d4cc2d71527ab9d588fe46e85db0db9ea03b29ed9f91c01030"
+   }
+  },
+  "reason": "per-example prediction dumps omitted to keep the repository small; aggregated metrics are complete and unmodified",
+  "regenerate": "re-run the suite with the same seeds and configuration"
+ }
+}

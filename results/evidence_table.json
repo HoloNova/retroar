@@ -1,0 +1,1582 @@
+{
+ "belief_smoke_v1": {
+  "hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/hard_seed31/result.json"
+  },
+  "posthoc_hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/posthoc_hard_seed31/result.json"
+  },
+  "posthoc_soft_t1 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/posthoc_soft_t1_seed31/result.json"
+  },
+  "posthoc_soft_t2 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/posthoc_soft_t2_seed31/result.json"
+  },
+  "posthoc_soft_t4 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/posthoc_soft_t4_seed31/result.json"
+  },
+  "posthoc_soft_t8 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/posthoc_soft_t8_seed31/result.json"
+  },
+  "soft_t1 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/soft_t1_seed31/result.json"
+  },
+  "soft_t2 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/soft_t2_seed31/result.json"
+  },
+  "soft_t4 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/soft_t4_seed31/result.json"
+  },
+  "soft_t8 :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    31
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_smoke_v1/soft_t8_seed31/result.json"
+  }
+ },
+ "belief_v1": {
+  "hard :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.83046875,
+   "sequence_accuracy_stdev": 0.019648088031186395,
+   "constraint_success_mean": 0.83046875,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/hard_seed20/serial_test.json"
+  },
+  "posthoc_hard :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.90390625,
+   "sequence_accuracy_stdev": 0.02385692419469136,
+   "constraint_success_mean": 0.90390625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/posthoc_hard_seed20/serial_test.json"
+  },
+  "posthoc_soft_t1 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.93828125,
+   "sequence_accuracy_stdev": 0.010481568644530264,
+   "constraint_success_mean": 0.93828125,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/posthoc_soft_t1_seed20/serial_test.json"
+  },
+  "posthoc_soft_t2 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.9453125,
+   "sequence_accuracy_stdev": 0.01586726250905461,
+   "constraint_success_mean": 0.9453125,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/posthoc_soft_t2_seed20/serial_test.json"
+  },
+  "posthoc_soft_t4 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.9234375,
+   "sequence_accuracy_stdev": 0.042576333104495975,
+   "constraint_success_mean": 0.9234375,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/posthoc_soft_t4_seed20/serial_test.json"
+  },
+  "posthoc_soft_t8 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.8609375,
+   "sequence_accuracy_stdev": 0.08289169267691275,
+   "constraint_success_mean": 0.8609375,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/posthoc_soft_t8_seed20/serial_test.json"
+  },
+  "soft_t1 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.84921875,
+   "sequence_accuracy_stdev": 0.02614562582918986,
+   "constraint_success_mean": 0.84921875,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/soft_t1_seed20/serial_test.json"
+  },
+  "soft_t2 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.83671875,
+   "sequence_accuracy_stdev": 0.014192111034831992,
+   "constraint_success_mean": 0.83671875,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/soft_t2_seed20/serial_test.json"
+  },
+  "soft_t4 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.8078125,
+   "sequence_accuracy_stdev": 0.07711258067044735,
+   "constraint_success_mean": 0.8078125,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/soft_t4_seed20/serial_test.json"
+  },
+  "soft_t8 :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "sequence_accuracy_mean": 0.75390625,
+   "sequence_accuracy_stdev": 0.060829732431239986,
+   "constraint_success_mean": 0.75390625,
+   "forward_calls_per_example": 12,
+   "example_source": "belief_v1/soft_t8_seed20/serial_test.json"
+  }
+ },
+ "delayed_smoke_v1": {
+  "restart_hard :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/restart_hard_seed99/serial_test.json"
+  },
+  "restart_hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.3125,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.3125,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/restart_hard_seed99/serial_test.json"
+  },
+  "restart_hard :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/restart_hard_seed99/serial_test.json"
+  },
+  "restart_hard :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/restart_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.1875,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.1875,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_hard_seed99/serial_test.json"
+  },
+  "revise_soft :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_soft_seed99/serial_test.json"
+  },
+  "revise_soft :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.25,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.25,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_soft_seed99/serial_test.json"
+  },
+  "revise_soft :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_soft_seed99/serial_test.json"
+  },
+  "revise_soft :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/revise_soft_seed99/serial_test.json"
+  },
+  "wait_ar :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.1875,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.1875,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: wait_k2 :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.25,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.25,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v1/wait_ar_seed99/serial_test.json"
+  }
+ },
+ "delayed_smoke_v3": {
+  "restart_hard :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/restart_hard_seed99/serial_test.json"
+  },
+  "restart_hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.3125,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.3125,
+   "forward_calls_per_example": 6,
+   "example_source": "delayed_smoke_v3/restart_hard_seed99/serial_test.json"
+  },
+  "restart_hard :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/restart_hard_seed99/serial_test.json"
+  },
+  "restart_hard :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/restart_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/revise_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.1875,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.1875,
+   "forward_calls_per_example": 12,
+   "example_source": "delayed_smoke_v3/revise_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/revise_hard_seed99/serial_test.json"
+  },
+  "revise_hard :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/revise_hard_seed99/serial_test.json"
+  },
+  "revise_soft :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/revise_soft_seed99/serial_test.json"
+  },
+  "revise_soft :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.25,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.25,
+   "forward_calls_per_example": 12,
+   "example_source": "delayed_smoke_v3/revise_soft_seed99/serial_test.json"
+  },
+  "revise_soft :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/revise_soft_seed99/serial_test.json"
+  },
+  "revise_soft :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/revise_soft_seed99/serial_test.json"
+  },
+  "wait_ar :: frozen_early :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.1875,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.1875,
+   "forward_calls_per_example": 6,
+   "example_source": "delayed_smoke_v3/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: no_reveal :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: permutation_repair :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/wait_ar_seed99/serial_test.json"
+  },
+  "wait_ar :: wait_k2 :: val": {
+   "runs": 1,
+   "seeds": [
+    99
+   ],
+   "sequence_accuracy_mean": 0.25,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.25,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_smoke_v3/wait_ar_seed99/serial_test.json"
+  }
+ },
+ "delayed_v1": {
+  "restart_hard :: frozen_early :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.003125,
+   "sequence_accuracy_stdev": 0.0032682032286487327,
+   "constraint_success_mean": 0.003125,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/restart_hard_seed30/serial_test.json"
+  },
+  "restart_hard :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.66640625,
+   "sequence_accuracy_stdev": 0.06326436889034577,
+   "constraint_success_mean": 0.66640625,
+   "forward_calls_per_example": 6,
+   "example_source": "delayed_v1/restart_hard_seed30/serial_test.json"
+  },
+  "restart_hard :: no_reveal :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.009375,
+   "sequence_accuracy_stdev": 0.006536406457297465,
+   "constraint_success_mean": 0.009375,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/restart_hard_seed30/serial_test.json"
+  },
+  "restart_hard :: permutation_repair :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.03828125,
+   "sequence_accuracy_stdev": 0.040819845242541036,
+   "constraint_success_mean": 0.03828125,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/restart_hard_seed30/serial_test.json"
+  },
+  "revise_hard :: frozen_early :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.00703125,
+   "sequence_accuracy_stdev": 0.008468548198702656,
+   "constraint_success_mean": 0.00703125,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/revise_hard_seed30/serial_test.json"
+  },
+  "revise_hard :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.8015625,
+   "sequence_accuracy_stdev": 0.02181912506838897,
+   "constraint_success_mean": 0.8015625,
+   "forward_calls_per_example": 12,
+   "example_source": "delayed_v1/revise_hard_seed30/serial_test.json"
+  },
+  "revise_hard :: no_reveal :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.025,
+   "sequence_accuracy_stdev": 0.016247370580535485,
+   "constraint_success_mean": 0.025,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/revise_hard_seed30/serial_test.json"
+  },
+  "revise_hard :: permutation_repair :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.03828125,
+   "sequence_accuracy_stdev": 0.02146661197505326,
+   "constraint_success_mean": 0.03828125,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/revise_hard_seed30/serial_test.json"
+  },
+  "revise_soft :: frozen_early :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.00078125,
+   "sequence_accuracy_stdev": 0.0017469281074217107,
+   "constraint_success_mean": 0.00078125,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/revise_soft_seed30/serial_test.json"
+  },
+  "revise_soft :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.90234375,
+   "sequence_accuracy_stdev": 0.011048543456039806,
+   "constraint_success_mean": 0.90234375,
+   "forward_calls_per_example": 12,
+   "example_source": "delayed_v1/revise_soft_seed30/serial_test.json"
+  },
+  "revise_soft :: no_reveal :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.0484375,
+   "sequence_accuracy_stdev": 0.02096313728906053,
+   "constraint_success_mean": 0.0484375,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/revise_soft_seed30/serial_test.json"
+  },
+  "revise_soft :: permutation_repair :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.02421875,
+   "sequence_accuracy_stdev": 0.01666463203726683,
+   "constraint_success_mean": 0.02421875,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/revise_soft_seed30/serial_test.json"
+  },
+  "wait_ar :: frozen_early :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.00234375,
+   "sequence_accuracy_stdev": 0.0034938562148434213,
+   "constraint_success_mean": 0.00234375,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/wait_ar_seed30/serial_test.json"
+  },
+  "wait_ar :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.74453125,
+   "sequence_accuracy_stdev": 0.031201133668306028,
+   "constraint_success_mean": 0.74453125,
+   "forward_calls_per_example": 6,
+   "example_source": "delayed_v1/wait_ar_seed30/serial_test.json"
+  },
+  "wait_ar :: no_reveal :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.02734375,
+   "sequence_accuracy_stdev": 0.005524271728019903,
+   "constraint_success_mean": 0.02734375,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/wait_ar_seed30/serial_test.json"
+  },
+  "wait_ar :: permutation_repair :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.02890625,
+   "sequence_accuracy_stdev": 0.023043564380863475,
+   "constraint_success_mean": 0.02890625,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/wait_ar_seed30/serial_test.json"
+  },
+  "wait_ar :: wait_k2 :: test": {
+   "runs": 5,
+   "seeds": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "sequence_accuracy_mean": 0.7953125,
+   "sequence_accuracy_stdev": 0.02811414721163528,
+   "constraint_success_mean": 0.7953125,
+   "forward_calls_per_example": null,
+   "example_source": "delayed_v1/wait_ar_seed30/serial_test.json"
+  }
+ },
+ "long_v1": {
+  "ar :: main :: test": {
+   "runs": 3,
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "sequence_accuracy_mean": 0.7747395833333334,
+   "sequence_accuracy_stdev": 0.04660294314628459,
+   "constraint_success_mean": 0.7747395833333334,
+   "forward_calls_per_example": 6,
+   "example_source": "long_v1/ar_seed0/result.json"
+  },
+  "extra_compute :: main :: test": {
+   "runs": 3,
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "sequence_accuracy_mean": 0.7408854166666666,
+   "sequence_accuracy_stdev": 0.01761425684696443,
+   "constraint_success_mean": 0.7408854166666666,
+   "forward_calls_per_example": 12,
+   "example_source": "long_v1/extra_compute_seed0/result.json"
+  },
+  "hard :: main :: test": {
+   "runs": 3,
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "sequence_accuracy_mean": 0.8502604166666666,
+   "sequence_accuracy_stdev": 0.009830513587592122,
+   "constraint_success_mean": 0.8502604166666666,
+   "forward_calls_per_example": 12,
+   "example_source": "long_v1/hard_seed0/result.json"
+  },
+  "soft :: main :: test": {
+   "runs": 3,
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "sequence_accuracy_mean": 0.8736979166666666,
+   "sequence_accuracy_stdev": 0.03252603124165832,
+   "constraint_success_mean": 0.8736979166666666,
+   "forward_calls_per_example": 12,
+   "example_source": "long_v1/soft_seed0/result.json"
+  },
+  "soft_feedback :: main :: test": {
+   "runs": 3,
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "sequence_accuracy_mean": 0.7578125,
+   "sequence_accuracy_stdev": 0.059112288868834205,
+   "constraint_success_mean": 0.7578125,
+   "forward_calls_per_example": 6,
+   "example_source": "long_v1/soft_feedback_seed0/result.json"
+  }
+ },
+ "pilot": {
+  "ar :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.1171875,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.1171875,
+   "forward_calls_per_example": 6,
+   "example_source": "pilot/ar_seed0/result.json"
+  },
+  "extra_compute :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.1171875,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.1171875,
+   "forward_calls_per_example": 12,
+   "example_source": "pilot/extra_compute_seed0/result.json"
+  },
+  "hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0859375,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0859375,
+   "forward_calls_per_example": 12,
+   "example_source": "pilot/hard_seed0/result.json"
+  },
+  "soft :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0859375,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0859375,
+   "forward_calls_per_example": 12,
+   "example_source": "pilot/soft_seed0/result.json"
+  },
+  "soft_feedback :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.125,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.125,
+   "forward_calls_per_example": 6,
+   "example_source": "pilot/soft_feedback_seed0/result.json"
+  }
+ },
+ "smoke": {
+  "ar :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "smoke/ar_seed0/result.json"
+  },
+  "extra_compute :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "smoke/extra_compute_seed0/result.json"
+  },
+  "hard :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "smoke/hard_seed0/result.json"
+  },
+  "soft :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "smoke/soft_seed0/result.json"
+  },
+  "soft_feedback :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "smoke/soft_feedback_seed0/result.json"
+  }
+ },
+ "stage_a_smoke": {
+  "ar :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_a_smoke/ar_seed0/result.json"
+  },
+  "ar_matched :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_smoke/ar_matched_seed0/result.json"
+  },
+  "extra_compute :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_smoke/extra_compute_seed0/result.json"
+  },
+  "hard :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_smoke/hard_seed0/result.json"
+  },
+  "posthoc_hard :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_smoke/posthoc_hard_seed0/result.json"
+  },
+  "posthoc_soft :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_smoke/posthoc_soft_seed0/result.json"
+  },
+  "soft :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_smoke/soft_seed0/result.json"
+  },
+  "soft_feedback :: main :: test": {
+   "runs": 1,
+   "seeds": [
+    0
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_a_smoke/soft_feedback_seed0/result.json"
+  }
+ },
+ "stage_a_v1": {
+  "ar :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.76953125,
+   "sequence_accuracy_stdev": 0.03548027758707998,
+   "constraint_success_mean": 0.76953125,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_a_v1/ar_seed0/result.json"
+  },
+  "ar_matched :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.7734375,
+   "sequence_accuracy_stdev": 0.04234274099351328,
+   "constraint_success_mean": 0.7734375,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_v1/ar_matched_seed0/result.json"
+  },
+  "extra_compute :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.74140625,
+   "sequence_accuracy_stdev": 0.013643944684822641,
+   "constraint_success_mean": 0.74140625,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_v1/extra_compute_seed0/result.json"
+  },
+  "hard :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.8453125,
+   "sequence_accuracy_stdev": 0.011912461470294459,
+   "constraint_success_mean": 0.8453125,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_v1/hard_seed0/result.json"
+  },
+  "posthoc_hard :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.8828125,
+   "sequence_accuracy_stdev": 0.012657696676577852,
+   "constraint_success_mean": 0.8828125,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_v1/posthoc_hard_seed0/result.json"
+  },
+  "posthoc_soft :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.925,
+   "sequence_accuracy_stdev": 0.011521782190431738,
+   "constraint_success_mean": 0.925,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_v1/posthoc_soft_seed0/result.json"
+  },
+  "soft :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.88046875,
+   "sequence_accuracy_stdev": 0.024951124097923924,
+   "constraint_success_mean": 0.88046875,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_a_v1/soft_seed0/result.json"
+  },
+  "soft_feedback :: main :: test": {
+   "runs": 5,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sequence_accuracy_mean": 0.73984375,
+   "sequence_accuracy_stdev": 0.04867946118648244,
+   "constraint_success_mean": 0.73984375,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_a_v1/soft_feedback_seed0/result.json"
+  }
+ },
+ "stage_b_smoke_v1": {
+  "ar :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_b_smoke_v1/ar_seed81/result.json"
+  },
+  "ar_more_training :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_b_smoke_v1/ar_more_training_seed81/result.json"
+  },
+  "hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v1/hard_seed81/result.json"
+  },
+  "posthoc_hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v1/posthoc_hard_seed81/result.json"
+  },
+  "posthoc_soft :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v1/posthoc_soft_seed81/result.json"
+  },
+  "soft :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v1/soft_seed81/result.json"
+  }
+ },
+ "stage_b_smoke_v2": {
+  "ar :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_b_smoke_v2/ar_seed81/result.json"
+  },
+  "ar_more_training :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_b_smoke_v2/ar_more_training_seed81/result.json"
+  },
+  "hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v2/hard_seed81/result.json"
+  },
+  "posthoc_hard :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v2/posthoc_hard_seed81/result.json"
+  },
+  "posthoc_soft :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0625,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0625,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v2/posthoc_soft_seed81/result.json"
+  },
+  "soft :: main :: val": {
+   "runs": 1,
+   "seeds": [
+    81
+   ],
+   "sequence_accuracy_mean": 0.0,
+   "sequence_accuracy_stdev": null,
+   "constraint_success_mean": 0.0,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_smoke_v2/soft_seed81/result.json"
+  }
+ },
+ "stage_b_v1": {
+  "ar :: policy1 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.7828125,
+   "sequence_accuracy_stdev": 0.03554472864399164,
+   "constraint_success_mean": 0.7828125,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_b_v1/ar_seed10/serial_test.json"
+  },
+  "ar :: policy2 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.8203125,
+   "sequence_accuracy_stdev": 0.025164255325635012,
+   "constraint_success_mean": 0.8203125,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_v1/ar_seed10/serial_test.json"
+  },
+  "ar :: policy4 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.8625,
+   "sequence_accuracy_stdev": 0.01999450608135895,
+   "constraint_success_mean": 0.8625,
+   "forward_calls_per_example": 24,
+   "example_source": "stage_b_v1/ar_seed10/serial_test.json"
+  },
+  "ar_more_training :: policy1 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.79140625,
+   "sequence_accuracy_stdev": 0.06380474059092318,
+   "constraint_success_mean": 0.79140625,
+   "forward_calls_per_example": 6,
+   "example_source": "stage_b_v1/ar_more_training_seed10/serial_test.json"
+  },
+  "ar_more_training :: policy2 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.8109375,
+   "sequence_accuracy_stdev": 0.05288606655023845,
+   "constraint_success_mean": 0.8109375,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_v1/ar_more_training_seed10/serial_test.json"
+  },
+  "ar_more_training :: policy4 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.834375,
+   "sequence_accuracy_stdev": 0.04643346739724754,
+   "constraint_success_mean": 0.834375,
+   "forward_calls_per_example": 24,
+   "example_source": "stage_b_v1/ar_more_training_seed10/serial_test.json"
+  },
+  "hard :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.846875,
+   "sequence_accuracy_stdev": 0.02640694340805558,
+   "constraint_success_mean": 0.846875,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_v1/hard_seed10/serial_test.json"
+  },
+  "posthoc_hard :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.90859375,
+   "sequence_accuracy_stdev": 0.012536567606157198,
+   "constraint_success_mean": 0.90859375,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_v1/posthoc_hard_seed10/serial_test.json"
+  },
+  "posthoc_soft :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.93359375,
+   "sequence_accuracy_stdev": 0.026779900782816578,
+   "constraint_success_mean": 0.93359375,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_v1/posthoc_soft_seed10/serial_test.json"
+  },
+  "soft :: policy0 :: test": {
+   "runs": 5,
+   "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sequence_accuracy_mean": 0.85234375,
+   "sequence_accuracy_stdev": 0.03376139130676859,
+   "constraint_success_mean": 0.85234375,
+   "forward_calls_per_example": 12,
+   "example_source": "stage_b_v1/soft_seed10/serial_test.json"
+  }
+ }
+}

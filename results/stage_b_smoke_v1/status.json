@@ -1,0 +1,18 @@
+{
+  "state": "blocked",
+  "phase": "serial_evaluation",
+  "active": [],
+  "details": {},
+  "completed_jobs": [
+    "ar_seed81",
+    "ar_more_training_seed81",
+    "hard_seed81",
+    "soft_seed81",
+    "posthoc_hard_seed81",
+    "posthoc_soft_seed81"
+  ],
+  "total_jobs": 6,
+  "workers": 2,
+  "elapsed_seconds": 28.088045113021508,
+  "error": "RuntimeError: Insufficient RAM for final evaluation"
+}

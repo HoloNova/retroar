@@ -1,0 +1,10 @@
+{"step": 500, "val_accuracy": 0.2109375, "loss": 0.7912489771842957, "elapsed_seconds": 22.697018533974187}
+{"step": 1000, "val_accuracy": 0.703125, "loss": 0.6308073401451111, "elapsed_seconds": 44.831981119990814}
+{"step": 1500, "val_accuracy": 0.8671875, "loss": 0.601164698600769, "elapsed_seconds": 65.55239241497475}
+{"step": 2000, "val_accuracy": 0.875, "loss": 0.6185027360916138, "elapsed_seconds": 87.33491155097727}
+{"step": 2500, "val_accuracy": 0.90625, "loss": 0.5861290693283081, "elapsed_seconds": 109.09789665197604}
+{"step": 3000, "val_accuracy": 0.90625, "loss": 0.6050233244895935, "elapsed_seconds": 131.88018042600015}
+{"step": 3500, "val_accuracy": 0.890625, "loss": 0.5609725117683411, "elapsed_seconds": 153.648327983974}
+{"step": 4000, "val_accuracy": 0.8984375, "loss": 0.5538262724876404, "elapsed_seconds": 175.12369837597362}
+{"step": 4500, "val_accuracy": 0.90625, "loss": 0.5427927374839783, "elapsed_seconds": 197.22970832599094}
+{"step": 5000, "val_accuracy": 0.9375, "loss": 0.5751792788505554, "elapsed_seconds": 218.62835836099111}

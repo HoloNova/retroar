@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "config": {
+      "dataset": "data/color6_delayed_smoke.json",
+      "model": {
+        "width": 32,
+        "heads": 2,
+        "ff": 64,
+        "layers": 1
+      },
+      "policies": [
+        "wait_ar",
+        "restart_hard",
+        "revise_hard",
+        "revise_soft"
+      ],
+      "seeds": [
+        99
+      ],
+      "workers": 2,
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "steps": 100,
+      "eval_every": 50,
+      "run_seconds": 1800,
+      "suite_seconds": 600,
+      "final_split": "val"
+    },
+    "dataset_sha256": "0b5086e933e6af967c3aca4ff4e2d38d5f4b28f8f402d7954a3bb8cd3a05fca1",
+    "source_sha256": "012b4cfa2423286183ce32b98239a902f8b0d76e47a676a9a98bfa71ae0b03ab",
+    "torch": "2.10.0+cpu",
+    "policy": "wait_ar",
+    "seed": 99
+  },
+  "completed_steps": 100,
+  "best_validation": 0.1875,
+  "elapsed_seconds": 4.907660755998222,
+  "forward_example_calls": 19200
+}

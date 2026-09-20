@@ -1,0 +1,29 @@
+{
+  "state": "completed",
+  "completed_training": [
+    "restart_hard_seed30",
+    "wait_ar_seed30",
+    "revise_hard_seed30",
+    "revise_soft_seed30",
+    "wait_ar_seed31",
+    "restart_hard_seed31",
+    "revise_hard_seed31",
+    "revise_soft_seed31",
+    "wait_ar_seed32",
+    "restart_hard_seed32",
+    "revise_hard_seed32",
+    "revise_soft_seed32",
+    "wait_ar_seed33",
+    "restart_hard_seed33",
+    "revise_hard_seed33",
+    "revise_soft_seed33",
+    "wait_ar_seed34",
+    "restart_hard_seed34",
+    "revise_hard_seed34",
+    "revise_soft_seed34"
+  ],
+  "active": [],
+  "total_training": 20,
+  "elapsed_seconds": 4111.663402766979,
+  "completed_evaluations": 20
+}

@@ -1,0 +1,7 @@
+{
+  "state": "completed",
+  "mode": "soft",
+  "seed": 72,
+  "step": 300,
+  "stop_reason": "max_steps"
+}
