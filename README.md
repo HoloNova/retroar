@@ -1,136 +1,83 @@
-# RetroAR — research log of a hypothesis that did not survive its own experiments
+# RetroAR
 
-This repository is the complete record of a small, self-contained research idea and its
-falsification. It contains the code, the pre-registered protocols, all run data, and the
-analysis — including the parts where the idea failed.
+**English-first research archive for a falsified hypothesis.**
 
-**Short version:** we asked whether an autoregressive generator becomes better if its most
-recent outputs stay *uncommitted* — held as modifiable drafts, optionally as probability
-distributions — and are revised as generation continues. Four rounds of controlled
-experiments on a small CPU-only graph-colouring task say **no, not in the way the idea
-needed**. Revising a finished sequence beats revising while generating, and a diagnostic
-showed that the strongest configuration scored just as well when its question-specific
-early draft was replaced by a constant.
+RetroAR asked whether an autoregressive generator improves when its newest outputs remain editable drafts—possibly as probability distributions—and are revised as generation continues. On a small CPU-only graph-colouring task, the committed experiments do **not** support that online mechanism as a distinctive advantage.
 
-**Status: archived research log. No further training is planned.** All documents are written
-in Chinese; this README gives the English summary and links into them.
+> **Status: archived. No further training is planned.** The repository preserves the code, preregistered protocols, published run data, analyses, limitations, and negative result.
 
----
+- [English documentation](docs/en/README.md)
+- [中文完整研究日志](docs/00_索引.md)
+- [MIT license](LICENSE)
 
-## 1. The idea in one paragraph
+## Bottom line
 
-Human speech is drafted and corrected before it is uttered. A transformer does not work that
-way: once a token is written it is frozen and becomes the context for everything after it.
-RetroAR asked whether the model should instead keep a short tail of positions as *soft draft*
-that continues to be corrected as new positions appear, with the tail eventually committed.
-The mechanism is intentionally simple: a generation module, a revision module, and a small
-editable draft buffer. No pretrained model is used anywhere in this repository.
+1. **After-generation revision beat online revision.** Across the two matched 5-seed rounds, it was better in 9/10 paired seed comparisons.
+2. **Soft categorical drafts did not establish the proposed source of gain.** Temperature sweeps produced genuinely non-collapsed states, but did not meet their preregistered continuation bar.
+3. **The strongest delayed-evidence soft result did not require the early draft details.** Replacing the early state with uniform probabilities, another question's state, or zeros produced essentially the same final accuracy.
+4. These are **mechanism diagnostics**, not evidence of practical usefulness: the task has six free vertices, three colours, a roughly 30k-parameter model, and can be solved exactly by classical backtracking.
 
-## 2. What was tested, and what the data says
+## Evidence snapshot
 
-All numbers are whole-question accuracy (every one of the six free positions correct), on the
-held-out test split, averaged over seeds. `results/evidence_table.json` holds the machine-readable
-version of every row, including seed lists and forward-call counts.
+All values below are whole-question accuracy on the held-out test split unless stated otherwise. A question counts as correct only when all six free positions are correct; values are means over the listed seeds.
 
-| Round | Question it isolated | Seeds | Headline result |
-|---|---|---|---|
-| First long run (`long_v1`) | Does editing uncommitted positions at all help? | 3 | revision 85.0–87.4% vs plain generation 77.5% |
-| Stage A (`stage_a_v1`) | Online revision vs. revising after generation | 5 | after-generation 88.3–92.5% > online 84.5–88.1% |
-| Stage B (`stage_b_v1`) | Matched budgets: sampling, double training, supervision | 5 new | after-generation 90.9–93.4% > online 84.7–85.2%; two-candidate sampling 82.0%; double training did not help |
-| Belief (`belief_v1`) | Was "soft draft" ever fairly tested? | 5 new | flattening the draft to a real distribution did not help at any temperature (T=2…8); high T was worse |
-| Delayed evidence (`delayed_v1`) | Does revising a draft help when evidence arrives late? | 5 new | revising 80.2% ≈ two-candidate waiting 79.5% (failed the pre-registered bar); soft config 90.2% but see below |
+| Round | Primary comparison | Result | Interpretation |
+|---|---|---:|---|
+| `long_v1` · 3 seeds | soft online vs. plain AR | 87.37% vs. 77.47% | Initial positive signal, not budget-matched |
+| `stage_a_v1` · 5 seeds | after-generation soft vs. online soft | 92.50% vs. 88.05% | Timing advantage moved away from online revision |
+| `stage_b_v1` · 5 new seeds | after-generation soft vs. online soft | 93.36% vs. 85.23% | Matched-budget replication favoured after-generation revision |
+| `belief_v1` · 5 new seeds | after-generation soft, T=2 | 94.53% | Flattening the state did not yield the proposed online benefit |
+| `delayed_v1` · 5 new seeds | soft revision vs. two-candidate waiting | 90.23% vs. 79.53% | Real signal, but post-hoc state replacement reached 90.39% |
 
-Three findings are worth stating plainly:
+The machine-readable aggregation is [`results/evidence_table.json`](results/evidence_table.json); the generated human-readable table is [`results/evidence_table.md`](results/evidence_table.md). Read the interpretation and caveats in [the English results note](docs/en/results.md), not from a single headline number.
 
-1. **Revising the whole unfinished sequence helps; revising it *while generating* does not.**
-   The ordering held across two independent 5-seed rounds (9/10 and 5/5 seeds). The online
-   variant also repaired only ~46% of wrong answers while breaking 28–36 previously correct
-   ones; the after-generation variant repaired ~76% and broke 6.
-2. **Keeping probabilities instead of hard choices is not the source of the gain.** A belief-temperature
-   sweep produced genuinely non-collapsed drafts (state entropy 0.03 → 0.88 nats, max probability
-   0.99 → 0.64) and the gain did not appear at any temperature. Pushing uncertainty up made results
-   worse and higher-variance. This constrains *this* representation intervention; it does not prove
-   every categorical-belief mechanism is useless.
-3. **The best configuration did not need the draft the idea was built on.** The 90.2% soft result in
-   the delayed-evidence round survives replacing the entire early draft with a uniform 1/3 per colour
-   (90.4%), with another question's draft (89.9%), or with zeros (90.6%). The early draft's entropy was
-   ~1.09 of a maximum 1.099 nats, i.e. nearly uninformative — consistent with the guess being formed
-   later, from the complete evidence, during the parallel revision passes.
+## What this repository does and does not claim
 
-## 3. What is *not* claimed
+**It does claim:** the tested implementation repeatedly demonstrates useful iterative solving after the full relevant evidence is available, and it records why that result is insufficient to support the original online-revision story.
 
-- Not a claim that iterative revision is useless — it clearly helps here, and that is **already
-  covered by prior work** (Mask-Predict, COrAL, Projected Autoregression, Corrector Sampling/RPT,
-  Stream of Revision; see [docs/04](docs/04_文献核验.md)).
-- Not a claim about language models, natural language, or production systems. This is a six-vertex
-  graph-colouring task with a 30k-parameter model on a 2-core CPU.
-- Not a claim that "online revision is impossible" — only that the implementations tested here do not
-  beat the stronger alternatives, and that the pre-registered bar was not met.
-- Not a claim of statistical significance in the usual sense. Five seeds give a minimum two-sided
-  sign-test p of 0.0625; the reported p-values are descriptive. Round 1's 3 seeds are worse still.
-- The task is solved to 100% by classical backtracking search. All accuracy numbers are therefore
-  *mechanism diagnostics*, never evidence of practical usefulness.
+**It does not claim:** that iterative refinement is useless; that online revision is impossible; that language models behave the same way; that the mechanism is practically useful; or that the descriptive five-seed comparisons establish conventional statistical significance. The smallest two-sided sign-test p-value for five positive paired seeds is 0.0625.
 
-## 4. Repository layout
+The delayed-evidence round reuses the Stage B task split. Full graphs are isomorphism-disjoint across splits, but some partial observations overlap training observations. This is a limitation, not an independent replication.
 
-```
-retroar_min/     model, rollout policies, training, suites (delayed/), supervisors
-configs/         JSON experiment configs (smoke, pilot, long, stage A/B, belief, delayed)
-scripts/         result aggregation (collect_evidence.py), data-driven probes,
-                 results slimming for publication (slim_results.py)
-tests/           41 regression tests: leakage, masking, rollout invariants,
-                 supervision parity, scheduler guards, resume determinism
-data/            generated datasets (unique-solution graph colouring, isomorphism-deduped)
-results/         all run data: aggregated metrics per run, per-experiment summaries,
-                 reports, status files, machine-readable evidence table
-docs/            Chinese research documents in chronological order — see docs/00_索引.md
+## Repository map
+
+```text
+retroar_min/     model, rollout policies, training, and experiment supervisors
+configs/         committed CPU experiment configurations
+scripts/         evidence collection, report generation, probes, and result slimming
+tests/           regression tests for leakage, masking, rollout, budgets, and resume logic
+data/            generated graph-colouring datasets with split metadata
+results/         published metrics, reports, statuses, traces, evidence table, and manifest
+docs/            English navigation plus the complete Chinese chronological research log
 ```
 
-Document index (Chinese, in reading order): **[docs/00_索引.md](docs/00_索引.md)**. The two
-documents a reader should open first are the closing summary
-([docs/13](docs/13_收尾实验与可行性总结.md)) and the literature overlap check
-([docs/04](docs/04_文献核验.md)).
+The detailed map, configuration catalogue, data policy, and terminology are in the [English documentation index](docs/en/README.md). Existing Chinese documents retain their original numbered paths so historical links and audit trails remain stable.
 
-## 5. Reproducing
+## Reproduce the published workflow
 
-CPU-only, single-threaded, memory-guarded. The original machine had 2 cores and 3.8 GiB RAM;
-every suite was designed around that ceiling (≤2 worker processes, RSS cap 1 GiB per worker,
-stop if host-available RAM drops below 768 MiB).
+The project is CPU-only and deliberately guarded for a small machine: one thread per worker, at most two workers, a 1 GiB RSS limit per worker, and a stop condition when host-available memory falls below 768 MiB.
 
 ```bash
-uv venv .venv && .venv/bin/pip install -r requirements-cpu.lock     # torch 2.10.0+cpu
-.venv/bin/python -m unittest discover -s tests -v                    # 41 tests
-.venv/bin/python -m retroar_min.run_local --config configs/cpu_long.json --output results/long_v1
-.venv/bin/python -m retroar_min.delayed --config configs/cpu_delayed.json --output results/delayed_v1
-.venv/bin/python -m scripts.collect_evidence                         # rebuild results/evidence_table.json
+uv venv .venv
+.venv/bin/pip install -r requirements-cpu.lock
+.venv/bin/python -m unittest discover -s tests -v
+
+# Single-process suite used for the first long run
+.venv/bin/python -m retroar_min.run_local \
+  --config configs/cpu_long.json --output results/long_v1
+
+# Multi-policy delayed-evidence suite
+.venv/bin/python -m retroar_min.delayed \
+  --config configs/cpu_delayed.json --output results/delayed_v1
+
+# Rebuild the committed aggregate table from published run files
+.venv/bin/python -m scripts.collect_evidence
 ```
 
-Every suite is resumable, refuses to overwrite finished runs, compares source/dataset
-fingerprints before resuming, and writes `blocked` (not success) when it stops on a resource
-guard. Training is seeded and deterministic (`use_deterministic_algorithms`), so a re-run with
-the same config reproduces the same weights.
+The [reproducibility guide](docs/en/reproducibility.md) lists the other suite entry points, resume rules, fingerprints, and publication policy. Finished runs refuse accidental overwrite; resume requires matching source and dataset fingerprints. A resource stop is recorded as `blocked`, not as a successful result.
 
-## 6. Data policy
+## Published-data policy
 
-`results/` contains the published tree: per-run aggregated metrics (`serial_test.json`),
-training curves, summaries, reports and status files — about 8 MiB, 1309 files. Two things were
-deliberately left out to keep the repository small, and `results/MANIFEST.json` records the
-source hash of every published file plus exactly what was removed:
+`results/` is the deliberately slimmed, committed tree. It contains aggregate metrics, reports, traces, statuses, and provenance. Model checkpoints (`*.pt`), console logs, and per-example prediction details are excluded from the published tree; [`results/MANIFEST.json`](results/MANIFEST.json) records the source hash and removals. The full local archive is `results_full/`, which is ignored by Git and is not required for reading the committed record.
 
-- model checkpoints (`*.pt`, ~37 MiB) and console logs;
-- the per-example prediction dumps inside `serial_test.json` (`policies[*].details`, ~242 MiB).
-  Each affected file lists the number of removed records and the SHA-256 of the removed payload.
-
-The full local tree (~300 MiB) is kept out of git as `results_full/`; `scripts/slim_results.py`
-rebuilds the published tree from it, and re-running the suites with the same seeds regenerates
-the dumps.
-
-One caveat worth repeating: the delayed-evidence round reuses the stage B dataset split. Full
-graphs are isomorphism-disjoint across splits, but 5/128 validation and 20/256 test
-*partial observations* coincide with training observations, and the rounds with new seeds are
-new training runs on a shared task family — not an independent replication on new data.
-
-## 7. License
-
-MIT — see [LICENSE](LICENSE). The datasets and result files are provided as-is, with no warranty
-of correctness or fitness for any purpose; use the numbers together with the limitations above.
+The committed data files are generated graph-colouring instances. They are provided as-is, with no warranty of correctness or fitness for any purpose. See [the data note](docs/en/repository-map.md#data-and-results) for the split and provenance caveats.
