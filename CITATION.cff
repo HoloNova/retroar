@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "RetroAR: an archived study of online draft revision in autoregressive generation"
+version: 0.1.0
+license: "MIT"
+type: software
+abstract: >-
+  An archived CPU-only study testing whether autoregressive generation benefits
+  from revisable hard or soft drafts. Controlled graph-colouring experiments
+  found effective iterative solving after complete evidence was available, but
+  did not establish a distinctive advantage for generating and revising an
+  early draft online.
+message: "If you use this archive, please cite it."
+authors:
+  - name: holonova
+keywords:
+  - autoregressive generation
+  - iterative refinement
+  - graph colouring
+  - negative result
+  - reproducibility
+repository-code: "https://github.com/HoloNova/retroar"
